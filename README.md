@@ -1,7 +1,10 @@
-# Sistema-Criptografico
-Se desarrollará un programa que permita guardar información encriptada y firmada, de manera que se pueda identificar que usuario la almaceno por medio de certificados digitales.
+# SISTEMA CRIPTOGRÁFICO
+Este programa permite guardar información firmada y encriptada, tambien se puede identificar al usuario que la
+almaceno por medio de los certificados digitales que se generan.
 
-## Instalación
+## INSTALACIÓN
+Se deben instalar las librerias que estan en el archivo con nombre requirements.txt
+
 Desde la carpte src que esta en repositorio.
 ```	
 > virtualenv env
@@ -15,25 +18,19 @@ Ejecutar el script que se encuentra en la carpeta src del repositorio.
 ```	
 > python main.py
 ```
-```
- ____  _     _
-/ ___|(_)___| |_ ___ _ __ ___   __ _
-\___ \| / __| __/ _ \ '_ ` _ \ / _` |
- ___) | \__ \ ||  __/ | | | | | (_| |
-|____/|_|___/\__\___|_| |_| |_|\__,_|
 
-  ____      _       _                         __ _
- / ___|_ __(_)_ __ | |_ ___   __ _ _ __ __ _ / _(_) ___ ___
-| |   | '__| | '_ \| __/ _ \ / _` | '__/ _` | |_| |/ __/ _ \
-| |___| |  | | |_) | || (_) | (_| | | | (_| |  _| | (_| (_) |
- \____|_|  |_| .__/ \__\___/ \__, |_|  \__,_|_| |_|\___\___/
-             |_|             |___/
+
+## INICIO
+Al ejecutar el programa mostrara el menú principal con las diferentes opciones:
 [1] Login
 [2] Registro
 [3] Limpiar
 [4] Salir
-[*] Selecciona una opción >
-```
+[*] Selecciona una opción
+
+En el Login podemos iniciar sesión después de haber creado un certificado.
+En el Registro podremos crear el certificado necesario para usar el programa.
+
 ## Registro
 Primero, hay que crear un certificado, seleccionamos la opción 2 del menú.
 ```
@@ -52,44 +49,24 @@ Clave privada (.key) > Andres.key
 Contraseña de la clave privada > 0123456789
 Bienvenido al sistema de mensajería!
 ```
-## Sistema de Mensajeria
-Al iniciar sesión correctamente, podemos cifrar y descifrar mensajes. 
-```
- __  __                       _           _
-|  \/  | ___ _ __  ___  __ _ (_) ___ _ __(_) __ _
-| |\/| |/ _ \ '_ \/ __|/ _` || |/ _ \ '__| |/ _` |
-| |  | |  __/ | | \__ \ (_| || |  __/ |  | | (_| |
-|_|  |_|\___|_| |_|___/\__,_|/ |\___|_|  |_|\__,_|
-                           |__/
+
+
+
+## VENTANA DE MENSAJERÍA
+Despues de iniciar sesión de manera correcta te enviara al menú de mensajeria, aqui estan las opciones:
 [1] Cifrar mensaje
 [2] Descifrar mensaje
 [3] Cerrar sesión
-[*] Selecciona una opción >
-```
-Seleccionamos la primera opción para escribir el mensaje.
-```
-[*] Selecciona una opción > 1
-AVISO, este mensaje estará cifrado por cesar!
-Escribe tu mensaje > Hola Mundo
-Mensaje encriptado > Krod Pxqgr
-Apúntalo, se genero el archivo cifrado.txt
-```
-Ahora la opción 2, para descifrar el mensaje.
-```
-[*] Selecciona una opción > 2
-Sugerencia: copia y pega abajo el mensaje encriptado
-Ingresa el mensaje encriptado > Krod Pxqgr
-Mensaje desencriptado > Hola Mundo
-```
-Al seleccionar la opción 3 volvemos al menú principal.
-## Limpiar
-Seleccionar la opción 3 para limpiar la consola o terminal.
-```
-[*] Selecciona una opción > 3
-```
-## Salir
-Por último, seleccionar la opción 4 para salir.
-```
-[*] Selecciona una opción > 4
-Hasta luego!
-```
+[*] Selecciona una opción
+
+Si seleccionamos Cifrar mensaje nos arrojara una pantalla donde nos dira que el mensaje se cifrara con
+cifrado cesar, luego nos dejara escribir el mensaje, después de eso nos dara el mensaje cifrado y nos dira
+que deberemos apuntarlo.
+Si seleccionamos Descifrar mensaje nos arrojara una pantalla donde nos dira que debemos pegar el mensaje
+encriptado con anterioridad y al aceptar nos dara el mensaje desencriptado.
+Si seleccionamos la opción 3 nos enviara al menú principal.
+
+## LIMPIAR TERMINAL
+Si queremos limpiar la terminal deberemos elegir la opción 3 en el menú principal.
+
+Para salir del programa deberemos seleccionar la opción 4 en el menú principal.
